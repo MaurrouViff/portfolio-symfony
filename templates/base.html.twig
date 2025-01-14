@@ -8,15 +8,22 @@
     <link rel="stylesheet" href="{{ asset('styles/output.css') }}">
     <title>{% block title %}{% endblock %}</title>
 </head>
-<body>
+<body class="flex flex-col">
 <header>
-    <nav class="flex items-center justify-center min-h-8">
-        <ul class="flex items-center justify-between">
-            <li>
-
+    <nav class="flex items-center justify-center min-h-14">
+        <ul class="flex items-center justify-between desktop:gap-5 laptop:gap-4 tablet:gap-3 gap-2">
+            <li class="list-none">
+                <a href="{{ path('app_home') }}" class="desktop:text-xl laptop:text-lg tablet:text-base text-sm desktop:py-2 laptop:py-1.5 py-1 desktop:px-4 laptop:px-3 tablet:px-2 px-1.5 rounded outline outline-2 outline-offset-0 outline-black hover:bg-black hover:text-white ease-in-out duration-300">Accueil</a>
+            </li>
+            <li class="list-none">
+                <a href="{{ path('app_home') }}" class="desktop:text-xl laptop:text-lg tablet:text-base text-sm desktop:py-2 laptop:py-1.5 py-1 desktop:px-4 laptop:px-3 tablet:px-2 px-1.5 rounded outline outline-2 outline-offset-0 outline-black hover:bg-black hover:text-white ease-in-out duration-300">Accueil</a>
+            </li>
+            <li class="list-none">
+                <a href="{{ path('app_home') }}" class="desktop:text-xl laptop:text-lg tablet:text-base text-sm desktop:py-2 laptop:py-1.5 py-1 desktop:px-4 laptop:px-3 tablet:px-2 px-1.5 rounded outline outline-2 outline-offset-0 outline-black hover:bg-black hover:text-white ease-in-out duration-300">Accueil</a>
             </li>
         </ul>
     </nav>
+    <hr class="h-1.5 bg-sky-400">
 </header>
 {% block body %}{% endblock %}
 </body>
